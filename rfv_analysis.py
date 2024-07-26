@@ -26,7 +26,8 @@ def freq_val_class(x, fv, q_dict):
         return 'A'
 
 
-file_path = 'E:/Python/Projetos/streamlit/app-rfv-analysis/dados_input 1.csv'
+file_path = 'https://raw.githubusercontent.com/yokomizo1/app-rfv-analysis/main/dados_input%201.csv'
+
 df = pd.read_csv(file_path)
 df['DiaCompra'] = pd.to_datetime(df['DiaCompra'], format='%Y-%m-%d')
 dia_atual = df['DiaCompra'].max()
